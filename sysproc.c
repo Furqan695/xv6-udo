@@ -77,3 +77,8 @@ int sys_uptime(void) {
     release(&tickslock);
     return xticks;
 }
+int sys_screen(void){
+cprintf("new console");
+
+    return fork();
+}
